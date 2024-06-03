@@ -1,0 +1,310 @@
+/* Bootstrap CSS */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
+
+/*google font orbitron */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* encabezado*/
+
+.encabezado {
+    width: 100%;
+    height: 23vw;
+    background: url(../img/bar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 4vw;
+}
+
+.encabezado ul img {
+    width: 12vw;
+    height: 11vw;
+    margin: 2.5vw;
+}
+
+.encabezado ul img:hover {
+    transform: rotateY(360deg);
+    transition: 4s;
+}
+
+.encabezado nav ul {
+    display: flex;
+    justify-content: space-around;
+   
+   
+}
+
+.encabezado nav ul .items {
+    padding: 6vw 0;
+
+}
+
+.encabezado nav ul .items a {
+    
+    color: white;
+    font-size: 2.4rem;
+    font-family: fantasy;
+}
+
+.encabezado nav ul .items a :hover {
+    color: #9a851c;
+}
+
+/*main */
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.intro p {
+ font-family: "poppins", sans-serif;
+ font-size: 1.2rem;
+ margin: 8vw auto;
+ text-align: center;
+}
+
+.formulario {
+    margin: 9vw;
+    align-items: center;
+}
+
+.col-md-12 .btn {
+    border-radius: 25px;
+}
+
+.col-md-12 .btn:hover {
+
+  border: 3px solid #16a5d1;
+}
+
+.col-md-12 label{
+    display: flex;
+    align-content: center;
+   
+
+}
+.col-md-12 label #acepto {
+    width: 12px;
+    height: 12px;
+    margin: 5px 5px;
+}
+
+
+
+h3 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.3rem;
+    text-align: center;  
+    margin: 7vw;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    gap: 10wv;
+    
+}
+
+.info .datos {
+    margin: 7vw 5vw;
+    font-family: "poppins", sans-serif;
+}
+
+.info .mapa {
+    width: 500px;
+    height: 300px;
+    margin: 3vw 15vw 0 0;
+}
+
+.info .datos ul li img{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: 1vw;
+}
+
+
+
+/*footer*/
+
+footer {
+    background: url(../img/footer.png);
+    width: 100%;
+    height: 25%;
+    color: whitesmoke;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.1rem;
+}
+
+footer .nombres {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+   
+}
+
+footer .pie{
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+
+  
+}
+
+footer .nombres a img {
+    width: 3vw;
+    height: 3vw;
+    margin-bottom: 5px;
+}
+
+footer .nombres a .in {
+    width: 2.6vw;
+    height: 2.6vw;
+} 
+
+footer .nombres a .in:hover,
+footer .nombres a img:hover {
+  width: 3.6vw;
+  height: 3.6vw;
+
+}
+
+
+/*responsivo mobile */
+
+@media (max-width: 500px) {
+
+    /*encabezado */
+
+    .encabezado {
+        height: 26%;
+    }
+
+    .encabezado nav #logo {
+        width: 16vw;
+        height: 14vw;
+        position: absolute;
+        top: 1.5vw;
+        left: 40%;
+        margin-bottom: 1.5vw;
+    }
+   
+    
+    .encabezado nav ul .items {
+      margin-top: 15vw;
+    
+    }
+
+    .encabezado nav ul {
+        margin-left: -18%;
+    }
+
+    .encabezado nav ul .items a {
+        gap: 1.7vw;
+        font-size: 1.3rem;
+        text-decoration: none;
+       
+    }
+    
+
+        
+    /*main */
+    
+     .intro p {
+        text-align: center;
+        font-size: 1rem;
+     }
+
+     .formulario {
+        margin-left: 2%;
+     }
+
+     .info{
+        display: block;
+
+     }
+
+     
+     h3 {
+        text-align: center;
+        margin: 0 auto;
+     }
+        
+
+     .info .datos ul li img {
+        width: 6vw;
+        height: 6vw;
+        margin-bottom: 6px;
+     }
+
+     .info .mapa {
+        width: 85%;
+        height: 35%;
+        margin-left: 7.5%;
+
+     }
+   
+
+     /*footer */
+    footer {
+        margin-top: 15px;
+    }
+     footer h3 {
+        padding: 15px;
+    }
+
+    .bruno,
+    .norma,
+    .matias {
+        width: 30%;
+        gap: 1%;
+        margin-top: 0;
+    }
+
+    .nombres a img {
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+
+    .encabezado div ul {
+        margin-top: 4vw;
+    }
+
+    .encabezado ul img {
+        padding: 1.5vw;
+    }
+
+    nav a {
+        font-size: 1.8rem;
+        justify-content: space-around;
+    }
+     
+    .formulario {
+        width: 85%;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Serif+Caption">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <nav>
+                <ul>
+                    <li><img id="logo" src="../img/logo.png" alt="logo"></li>
+                    <li class="items"><a href="../index.html">Home</a></li>
+                    <li class="items"><a href="menu.html">Menú</a></li>
+                    <li class="items"><a href="eventos.html">Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h2 class="text-center p-2 bg-text-warning bg-gradient">Reservas</h2>
+            <p>Hacé tus reservas en el local o pedí un presupuesto por los servicios de catering,<br> completando el
+                siguiente formulario.</p>
+        </div>
+
+        <div class="formulario">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <form id="contactForm" method="POST" name="Reserva" class="row g-3 col-12 col-md-12 col-lg-6 mt-2"
+                        onsubmit="return validateForm()">
+                        <div class="col-md-6">
+                            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="apellido" class="form-control" id="apellido"
+                                placeholder="Apellido">
+                        </div>
+                        <div class="col-md-8">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="number" name="personasCantidad" id="personasCantidad" class="form-control"
+                                placeholder="Cantidad de personas" min="0">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" name="telefono" id="telefono" class="form-control" placeholder="Teléfono">
+                        </div>
+                        <div class="col-md-6">
+                            <select name="servicio" id="servicio" class="form-control">
+                                <option value="">Seleccione un servicio</option>
+                                <option value="Catering">Catering</option>
+                                <option value="Eventos">Eventos</option>
+                                <option value="Reserva de mesa">Reserva de mesa</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea name="consultas" id="consultas" class="form-control" cols="10" rows="5"
+                                placeholder="Su consulta"></textarea>
+                        </div>
+
+                        <div class="col-md-12">
+
+                            <label>
+                                <input type="checkbox" name="acepto" id="acepto">Acepto los términos y condiciones
+                            </label>
+
+
+                        </div>
+                        <div class="col-md-12">
+                            <button name="submit" type="submit" class="btn btn-dark">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>También podes hacer tus reservas por teléfono:</h3>
+        </div>
+
+        <div class="info">
+            <div class="datos">
+                <ul>
+                    <li><img src="../img/telefono.png" alt="icono de teléfono">011 15-3726-7672</li>
+                    <li><img src="../img/ubicacion.png" alt="icono de ubicación"> Avenida Figueroa Alcorta 5100,
+                        Argentina.</li>
+                </ul>
+            </div>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9704.128602793699!2d-58.420915437273656!3d-34.56703223977313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5bc4148a245%3A0x151ff07f62e144f!2sBelisario%20Rold%C3%A1n!5e0!3m2!1ses-419!2sar!4v1716629329397!5m2!1ses-419!2sar"
+                    width="100" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3 class="pie">Grupo 20</h3>
+        <div class="nombres">
+
+            <div class="bruno">
+                <p>Bruno Piaggio</p>
+                <a href="https://github.com/Bruuno13" target="_blank">
+                    <img src="../img/github.png" alt="logo github">
+                </a>
+                <a href="https://linkedin.com/in/bruno-piaggio-9933331a0" target="_blank">
+                    <img class="in" src="../img/linkedin.png" alt="logo de linkedin">
+                </a>
+            </div>
+
+            <div class="norma">
+                <p>Norma Suriano</p>
+                <a href="https://github.com/NSuriano" target="_blank">
+                    <img src="../img/github.png" alt="logo github">
+                </a>
+                <a href="https://linkedin.com/in/norma-suriano-611789265" target="_blank">
+                    <img class="in" src="../img/linkedin.png" alt="logo linkedin">
+                </a>
+            </div>
+
+            <div class="matias">
+                <p>Matias Grande</p>
+                <a href="https://github.com/mgbrunini" target="_blank">
+                    <img src="../img/github.png" alt="logo github">
+                </a>
+                <a href="https://linkedin.com/in/mgbrunini" target="_blank">
+                    <img class="in" src="../img/linkedin.png" alt="logo linkedin">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function validateForm() {
+            var nombre = document.getElementById('nombre').value;
+            var apellido = document.getElementById('apellido').value;
+            var email = document.getElementById('email').value;
+            var personasCantidad = document.getElementById('personasCantidad').value;
+            var telefono = document.getElementById('telefono').value;
+            var servicio = document.getElementById('servicio').value;
+            var consultas = document.getElementById('consultas').value;
+            var acepto = document.getElementById('acepto').checked;
+
+            if (nombre == "" || apellido == "" || email == "" || personasCantidad == "" || telefono == "" || servicio == "" || consultas == "" || !acepto) {
+                alert("Por favor, complete todos los campos y acepte los términos y condiciones.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>

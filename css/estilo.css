@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* encabezado*/
+
+.header {
+    width: 100%;
+    height: 13vw;
+    margin-bottom: 5px;
+   
+}
+
+.encabezado {
+    width: 100%;
+    height: 40vw;
+    background: url(../img/bar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 4vw;
+}
+.encabezado ul img {
+    width: 12vw;
+    height: 11vw;
+    margin: 2.5vw;
+}
+
+.encabezado ul img:hover {
+    transform: rotateY(360deg);
+    transition: 4s;
+}
+
+.encabezado nav ul {
+    display: flex;
+    justify-content: space-around;
+   
+   
+}
+
+.encabezado nav ul .items {
+    padding: 6vw 0;
+
+}
+
+
+
+nav a {
+    
+    color: white;
+    font-size: 2.4rem;
+    font-family: fantasy;
+}
+
+nav a:hover {
+    color: #9a851c;
+
+}
+
+/*main*/
+
+.galeria img {
+    width: 100%;
+    height: 30vw;
+    margin: 0; 
+    top: 0; 
+}
+
+h2{
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-size: 3vw;
+    color: #342c1bf8;
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.parrafo {
+   
+    font-size: 2.3vw;
+    color: #3a2d22;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+.catering,
+.festejos,
+.happy,
+.bienvenida {
+    display: flex;
+    align-items: center;
+    width: 94vw;
+    justify-content: center;
+    margin: 2vw;
+}
+
+
+.fotos img,
+.foto {
+    width: 32vw;
+    height: 25vw;
+    border-radius: 26% 0 26% 0;
+    margin: 3vw;
+    right: 0;
+    box-shadow: 10px 10px 17px 5px #2d2d2d98;
+   
+}
+
+.fotos img:hover,
+.foto:hover {
+    border: 2px solid #e7e4e4;
+    transform: scale(1.1);
+}
+
+
+/*footer*/
+
+footer {
+    background: url(../img/footer.png);
+    width: 100%;
+    height: 22%;
+    color: whitesmoke;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.1rem;
+}
+
+footer .nombres {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0;
+    text-align: center;
+   
+}
+
+footer h3 {
+    text-align: center;
+    padding: 20px;
+  
+}
+
+footer .nombres a img {
+    width: 3vw;
+    height: 3vw;
+    margin: 3px;
+}
+
+footer .nombres a .in {
+    width: 2.6vw;
+    height: 2.6vw;
+} 
+
+footer .nombres a .in:hover,
+footer .nombres a img:hover {
+  width: 3.6vw;
+  height: 3.6vw;
+
+}
+
+/*responsivo mobile */
+
+@media (max-width: 500px) {
+
+    /*encabezado */
+
+    .encabezado {
+        height: 26%;
+    }
+
+    .encabezado nav #logo {
+        width: 16vw;
+        height: 14vw;
+        position: absolute;
+        top: 1.5vw;
+        left: 43%;
+        margin-bottom: 1.5vw;
+    }
+   
+    .encabezado nav ul .items {
+      margin-top: 15vw;
+      left: 0;
+    }
+
+    .encabezado nav ul .items a {
+        gap: 1.5vw;
+        font-size: 1.3rem;
+        padding: 0 4vw;
+    }
+
+    .banner {
+        width: 100%;
+    }
+    
+    /*main */
+
+    .parrafo {
+        font-size: clamp(1rem, 1.2rem, 1.4rem);
+    }
+
+    .bienvenida h2 {
+        font-size: 1.5rem;
+    }
+
+
+     /*footer */
+
+     footer h3 {
+        padding: 15px;
+    }
+
+    .bruno,
+    .norma,
+    .matias {
+        width: 30%;
+        gap: 1%;
+        margin-top: 0;
+    }
+
+    .nombres a img {
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+@media (min-width: 501px)and(max-width: 750px) {
+
+    .encabezado div ul {
+        margin-top: 4vw;
+    }
+
+    .encabezado ul img {
+        padding: 1.5vw;
+    }
+
+    nav a {
+        font-size: 1.8rem;
+        justify-content: space-around;
+    }
+}

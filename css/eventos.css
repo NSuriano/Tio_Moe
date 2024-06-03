@@ -1,0 +1,323 @@
+/* Bootstrap CSS */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
+
+/*google font orbitron */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@400..900&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+/* encabezado*/
+
+
+
+.header {
+    width: 100%;
+    height: 13vw;
+    margin-bottom: 5px;
+   
+}
+
+.encabezado {
+    width: 100%;
+    height: 23vw;
+    background: url(../img/Catering.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 4vw;
+}
+
+.encabezado ul img {
+    width: 12vw;
+    height: 11vw;
+    margin: 2.5vw;
+}
+
+.encabezado ul img:hover {
+    transform: rotateY(360deg);
+    transition: 4s;
+}
+
+.encabezado nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    
+   
+}
+
+.encabezado nav ul .items {
+    padding: 4vw 0;
+    font-style: none;
+}
+
+
+nav a {
+    
+    color: #893409;
+    font-size: 2.3rem;
+    font-family: fantasy;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #9a851c;
+
+}
+
+/* main */
+
+.banner img {
+    width: 100%;
+    height: 30%;
+    top: 0;
+    margin: 0;
+}
+.catering {
+    padding: 4vw;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1 rem;
+    text-align: justify;
+}
+
+
+.servicios h2,
+.catering h2 {
+    margin: 4vw;
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+}
+
+.servicios{
+    margin: 2vw 1vw;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5vw;
+}
+
+.formulario h2 {
+    font-family: "Orbitron", sans-serif;
+    margin-top: 5vw; 
+}
+
+.formulario .btn:hover {
+    border: 3px solid #50e7e7e6;
+    
+}
+
+.formulario .btn{
+    border-radius: 25px;
+}
+
+#about .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Alinea verticalmente los elementos en el centro */
+#about .row.align-items-center {
+    align-items: center;
+}
+
+/* Estilos adicionales para la imagen */
+
+.about-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.about-img img {
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    border-radius: 0.25rem;
+}
+.card-img{
+    width: 100%;
+    height: 90%;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 17px 5px #2d2d2d98;
+}
+
+.formulario{
+    margin-bottom: 5%;
+}
+
+/*footer*/
+
+footer {
+    background: url(../img/footer.png);
+    width: 100%;
+    height: 25%;
+    color: whitesmoke;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.1rem;
+}
+
+footer .nombres {
+    display: flex;
+    justify-content: space-around;
+    margin: 3px 0;
+    text-align: center;
+   
+}
+
+footer h3 {
+    text-align: center;
+    padding: 15px;
+  
+}
+
+footer .nombres a img {
+    width: 3vw;
+    height: 3vw;
+    margin: 0 3px;
+    
+}
+
+footer .nombres a .in {
+    width: 2.6vw;
+    height: 2.6vw;
+} 
+
+footer .nombres a .in:hover,
+footer .nombres a img:hover {
+  width: 3.6vw;
+  height: 3.6vw;
+
+}
+
+@media (max-width: 500px) {
+
+    /*encabezado */
+
+    .encabezado {
+        width: 100%;
+        height: 26%;
+    }
+
+    .encabezado nav #logo {
+        width: 16vw;
+        height: 14vw;
+        position: absolute;
+        top: 1.5vw;
+        left: 37%;
+        margin-bottom: 1.5vw;
+    }
+   
+    .encabezado nav ul .items {
+      margin-top: 19vw;
+      padding: 0;
+      left: 0;
+     
+      
+    }
+
+    .encabezado nav ul .items a {
+        gap: 1vw;
+        font-size: 1.1rem;
+        color: white;
+        padding-left: 0;
+
+
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .catering {
+        font-size: 2.5vw;
+        width: 89%;
+        margin: 0 4vw;
+        
+    }
+
+    .catering p {
+        margin: 0 ;
+      
+    }
+    .servicios,
+    .formulario {
+        width: 85%;
+        margin: 5vw 7vw;
+    }
+
+    .footer .pie {
+        padding: 0;
+    }
+
+    footer .nombres {
+        text-align: center;
+        gap: 8vw;
+        width: 30%;
+        justify-content: space-between;
+        margin: 0 2vw;
+    }
+
+    footer .nombres img {
+        width: 15px;
+        height: 15px;
+    }
+    
+}  
+
+@media (min-width: 501px) and (max-width: 750px) {
+    
+    .encabezado {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .encabezado div ul {
+        margin: 4vw 0;
+        padding: 0;
+        justify-content: left;
+        
+    }
+
+    .encabezado ul img {
+        margin: 2.5vw 0;
+    }
+    
+}
+
